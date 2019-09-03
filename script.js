@@ -30,7 +30,7 @@ const Peer = window.Peer;
 
   const peer = (window.peer = new Peer({
     key: 'c5f82ec8-0dda-4a99-a44c-f940703f71d2',//window.__SKYWAY_KEY__,
-    debug: 3,
+    debug: 3
   }));
 
   // Register caller handler
