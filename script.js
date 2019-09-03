@@ -15,6 +15,8 @@ const Peer = window.Peer;
     SDK: ${sdkSrc ? sdkSrc.src : 'unknown'}
   `.trim();
 
+  navigator.mediaDevices = navigator.mediaDevices || ((navigator.mozGetUserMedia || navigator.webkitGetUserMedia) ? {}: null);
+
   const localStream = await navigator.mediaDevices
     .getUserMedia({
       audio: true,
